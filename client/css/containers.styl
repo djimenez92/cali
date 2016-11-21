@@ -1,0 +1,191 @@
+@font-face
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+	font-family 'Raleway-Regular'
+	src url(../fonts/Raleway/Raleway-Regular.ttf)
+@font-face
+	font-family 'Raleway-Medium'
+	src url(../fonts/Raleway/Raleway-Medium.ttf)
+	
+rosado = #FC6765
+blanco = #fff
+naranja = #fcae5a
+amarillo = #fdd13e
+naranja-oscuro = #FCA241
+amarillo-oscuro = #FDC50C
+naranja-muy-oscuro = #f88b15
+plomo-fondo = #eef6ff
+//#f6f9fc
+plomo-texto = #6b7c93
+plomo-borde = #c2dfff
+azul = #1B2B69
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html 
+	font-size 14px 
+	
+body 
+	font-family 'Raleway-Light'
+	
+header
+	nav 
+		background-color rosado
+p 
+	color plomo-texto
+characteristic_section_title(color)
+	color color
+	font-size 1.6rem
+	font-family 'Raleway-Regular'
+	font-weight bolder
+	text-align center 
+styles_before_after(background)
+	&:before
+		content ''
+		width 30px
+		height 3px 
+		background-color background
+		position absolute
+		left 0
+		bottom -5px
+.flex-row-wrap
+	display flex 
+	flex-flow row wrap 
+	justify-content center
+	align-items center
+.flex-column-wrap
+	display flex 
+	flex-flow column wrap 
+	justify-content center
+	align-items center
+.peru
+	background-image url(../img/peru.png)
+.country
+	width 80px
+	height 50px
+	background-position center
+	background-size cover
+.btn 
+	height 40px 
+	line-height 40px
+	background-color rosado
+	box-shadow none
+	&:hover
+		background-color rosado
+		box-shadow none
+.containers-container
+	width 100%
+	height auto
+	background-color plomo-fondo
+	padding 80px 0
+	position relative
+	left 0
+	top 0
+	.container 
+		.row-principal
+			&:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(5)
+				margin-bottom 50px
+				.col 
+					p 
+						position relative
+						characteristic_section_title(plomo-texto)
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				margin-bottom 80px
+				.col-offers
+					.offers
+						background-color blanco
+						border 1px solid plomo-borde
+						.offers-header
+							border-bottom 1px solid plomo-borde
+							padding 20px
+							.row 
+								&:nth-of-type(1)
+									margin-bottom 30px
+									.col 
+										&:nth-of-type(1)
+											display flex 
+											flex-flow row wrap 
+											justify-content flex-end
+										&:nth-of-type(2)
+											p 
+												&:nth-of-type(1)
+													font-size 1.3rem
+								&:nth-of-type(2)
+									margin-bottom 0
+									.col 
+										p 
+											text-align center
+											font-size 1.3rem
+											font-family 'Raleway-Regular'
+						.offers-footer
+							.row
+								margin-bottom 0
+								border-bottom 1px solid plomo-borde 
+								.col 
+									p, a 
+										margin 15px
+			&:nth-of-type(4)
+				margin-bottom 80px
+				.col-upcomming-offers 
+					.upcomming-offers
+						background-color blanco
+						padding 20px
+						.row 
+							margin-bottom 0
+							.col 
+								p 
+									text-align center
+									&:nth-of-type(1)
+										font-size 1.3rem
+										font-family 'Raleway-Regular'
+										margin-top 20px
+									&:nth-of-type(2)
+										margin-top 10px
+										margin-bottom 10px
+					&:nth-of-type(2)
+						margin-top 30px
+			&:nth-of-type(6)
+				margin-bottom 0
+				.col-products-delivered
+					margin-bottom 20px
+					.products-delivered
+						background-color blanco
+						border 1px solid plomo-borde
+						padding 20px
+						.row 
+							margin-bottom 0
+							.col 
+								p
+									&:nth-of-type(1)
+										font-family 'Raleway-Regular'
+@media screen and (max-width: 380px)
+	.containers-container
+		.container
+			.row-principal
+				&:nth-of-type(6)
+					.col-products-delivered
+						.products-delivered
+							.row 
+								.col 
+									&:nth-of-type(2)
+										.country 
+											width 100%
+@media screen and (min-width: 601px)
+	.containers-container
+		.container
+			.row-principal
+				&:nth-of-type(2)
+					.col-offers
+						transform translateX(50%)
+				&:nth-of-type(4)
+					.col-upcomming-offers
+						&:nth-of-type(2)
+							margin-top 0
+				
+							
+			

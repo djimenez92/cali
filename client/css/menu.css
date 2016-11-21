@@ -1,0 +1,34 @@
+@font-face{
+  font-family:'Raleway-Light';
+src:url("../fonts/Raleway/Raleway-Light.ttf")
+}
+@font-face{
+  font-family:'Raleway-Regular';
+  src:url("../fonts/Raleway/Raleway-Regular.ttf")}
+  @font-face{font-family:'Raleway-Medium';src:url("../fonts/Raleway/Raleway-Medium.ttf")}
+  .flex-row-wrap{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center}
+  .flex-column-wrap{display:flex;flex-flow:column wrap;justify-content:center;align-items:center}
+  header nav{position:absolute;left:0;top:0;z-index:999;}
+  header nav .nav-wrapper .container{height:100%;}
+  header nav .nav-wrapper .container .brand-logo{font-family:'Raleway-Medium';font-weight:bolder;letter-spacing:.1rem;z-index:2}
+  header nav .nav-wrapper .container .button-collapse{display:flex;flex-flow:column wrap;justify-content:center;align-items:center;}
+  header nav .nav-wrapper .container .button-collapse span{height:3rem;font-size:3rem}
+  header nav .nav-wrapper .container .hide-on-med-and-down li{margin:0 20px;}
+  header nav .nav-wrapper .container .hide-on-med-and-down li a{font-family:'Raleway-Light';font-size:1.3rem;}
+  header nav .nav-wrapper .container .hide-on-med-and-down li a:hover{
+    background-color:#fff9f2;
+  padding-top: 0.5px;}
+  header nav .nav-wrapper .container .side-nav{
+    width:270px;
+    background-image:url("../client/img/fondo-menu.jpeg");
+    background-size:cover;
+    background-position:left center}
+  @media screen and (min-width:993px){
+    header nav .nav-wrapper .container .button-collapse{
+      display:block;
+    }
+  }

@@ -1,0 +1,75 @@
+doctype html
+html(lang='es')
+	head 
+		meta(charset='utf-8')
+		title Cali | Funcionalidades
+		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='./client/css/materialize.min.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/features.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/menu.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', href='https://file.myfontastic.com/eNHTdnS7yKsKbGkf7HwvVT/icons.css')
+	body 
+		include ./blocks/menu.pug
+		section.supply-container
+			.container
+				.row.flex-row-wrap
+					.col.s12.l6.flex-column-wrap
+						p Suministro de café facilitado
+						p Cali creó el concepto del contenedor de café en línea: usted lo llena, nosotros nos aseguramos de entregarlo. Durante un período fijo de 6 semanas, los tostadores piden muestras y hacen pedidos de cafés que todavía están en el origen. Agrupando los pedidos de los tostadores en línea, algrano hace que sea posible conseguir el café directamente en la finca, ¡sin importar la cantidad que necesite!
+						a(href='#').btn Encontrar café
+					.col.s12.l6.flex-row-wrap
+						.features-image
+		section.producers-container
+			.container
+				.row.flex-row-wrap
+					.col.s12.l6.flex-row-wrap
+						.producers-image
+					.col.s12.l6.flex-column-wrap
+						p Conozca a los productores y desarrolle su red de café
+						p Escuche la voz de los productores en todo el mundo. Siga a los productores en línea, participe y obtenga información auténtica de lo que pasa directamente desde los campos de café. algrano formó la primera comunidad en línea de productores y tostadores para conectar y abrir un canal de comunicación directa entre ambos extremos de la cadena de suministro.
+						a(href='#').btn Úete a la comunidad
+		section.benefits-container
+			.container
+				.row
+					.col.s12
+						p Beneficios
+				.row
+					.col.s12.m6.l4
+						.benefits.flex-column-wrap
+							span.icon-calendar-check-o
+							p Solo productos frescos
+							p algrano no almacene cafés. Nosotros estamos al tanto de las temporadas de cafés y le ofrecemos solo café fresco directamente desde el origen.
+					.col.s12.m6.l4
+						.benefits.flex-column-wrap
+							span.icon-money
+							p Solo productos frescos
+							p algrano no almacene cafés. Nosotros estamos al tanto de las temporadas de cafés y le ofrecemos solo café fresco directamente desde el origen.
+					.col.s12.m6.l4
+						.benefits.flex-column-wrap
+							span.icon-thumbs-up-1
+							p Solo productos frescos
+							p algrano no almacene cafés. Nosotros estamos al tanto de las temporadas de cafés y le ofrecemos solo café fresco directamente desde el origen.
+				.row
+					.col.s12.m6.l4
+						.benefits.flex-column-wrap
+							span.icon-users
+							p Solo productos frescos
+							p algrano no almacene cafés. Nosotros estamos al tanto de las temporadas de cafés y le ofrecemos solo café fresco directamente desde el origen.
+					.col.s12.m6.l4
+						.benefits.flex-column-wrap
+							span.icon-camera
+							p Solo productos frescos
+							p algrano no almacene cafés. Nosotros estamos al tanto de las temporadas de cafés y le ofrecemos solo café fresco directamente desde el origen.
+					.col.s12.m6.l4
+						.benefits.flex-column-wrap
+							span.icon-zap
+							p Solo productos frescos
+							p algrano no almacene cafés. Nosotros estamos al tanto de las temporadas de cafés y le ofrecemos solo café fresco directamente desde el origen.
+		
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery-3.1.1.min.js')
+		script(src='./client/js/materialize.min.js')
+		script(src='./client/js/features.js')
+

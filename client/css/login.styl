@@ -1,0 +1,300 @@
+@font-face
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+	
+plomo-not-selected = #f5f5f5
+blanco = #fff
+plomo-oscuro = #565656
+plomo-claro = #3B4360
+azul-facebook = #3b5999
+celeste-twitter = #55acee
+rojo-google-plus = #df2029
+negro = #333
+celeste = #03a1e9
+plomo-texto = #6b7c93
+naranja = #fcae5a
+amarillo = #fdd13e
+amarillo-hover = #FDC50C
+naranja-oscuro = #FCA241
+amarillo-oscuro = #FDC50C
+naranja-muy-oscuro = #f88b15
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html 
+	font-size 14px
+body
+	font-family 'Raleway-Light'
+	
+logo_section()	
+	width 80px
+	height 80px
+	font-size 2.5rem
+	color plomo-texto
+	text-align center
+	line-height 80px
+	border-radius 50%
+	border 3px solid plomo-texto
+styles_input()
+	width 70%
+	text-align center	
+	font-size 1rem
+	color plomo-oscuro	
+	&:focus
+		outline 0
+		border 0px solid transparent
+		border-bottom 1px solid celeste
+		box-shadow 0 1px 0 0 celeste
+	
+.tab-link-selected
+	background-color blanco !important
+	border-bottom 1px solid blanco !important
+.btn
+	display flex 
+	flex-flow row nowrap
+	justify-content center
+	align-content center
+	width 180px
+	height 40px
+	background-color transparent
+	color celeste
+	font-weight bolder
+	border-radius 0.2rem
+	border 2px solid celeste
+	letter-spacing 0
+	box-shadow 	none
+	transition border-radius 0.5s ease
+	&:hover 
+		background-color transparent
+		box-shadow none
+
+header
+	nav
+		background-color amarillo 
+		box-shadow none
+		position relative !important
+		.nav-wrapper
+			.container 
+				ul 
+					&:nth-of-type(1)
+						li 
+							&:nth-of-type(1)
+								a
+									background-color amarillo-hover
+							&:nth-of-type(2), &:nth-of-type(3)
+								a
+									&:hover 
+										background-color amarillo-hover
+.login-signup-container
+	display flex 
+	flex-flow row nowrap
+	justify-content center
+	align-items center
+	width 100%
+	height auto
+	padding 80px 0
+	background-color plomo-not-selected
+	position relative
+	left 0
+	top 0
+	.row-login-signup
+		margin-bottom 0
+		.col 
+			display flex 
+			flex-flow row nowrap
+			justify-content center
+			align-content center
+			.login-signup
+				width 90%
+				height auto
+				background-color blanco
+				border-radius 0.2rem
+				border 1px solid plomo-texto
+				position relative
+				.row 
+					p 
+						color plomo-texto
+					&:nth-of-type(1)
+						.tab-links
+							display flex 
+							flex-flow row nowrap
+							justify-content center
+							align-content center
+							width 100%
+							height 60px
+							background-color plomo-not-selected
+							a 
+								display flex 
+								flex-flow row nowrap
+								justify-content center
+								align-content center
+								width 50%
+								border-bottom 1px solid plomo-texto
+								background-color transparent
+								position relative
+								cursor pointer
+								&:nth-of-type(1)
+									&:after
+										content ''
+										width 1px 
+										height 100%
+										background-color plomo-texto
+										position absolute
+										top 0
+										right 0
+								span 
+									color plomo-texto
+									font-size 1.8rem
+									line-height 60px
+								p 
+									display none
+									color plomo-texto
+					&:nth-of-type(2)
+						.col 
+							.login
+								width 100%
+								.row
+									&:nth-of-type(1)
+										margin-top 10px
+										margin-bottom 20px
+										.col 
+											p
+												font-size 1.4rem
+												color plomo-texto
+									&:nth-of-type(2), &:nth-of-type(3)
+										margin-bottom 0
+										.col 
+											input
+												styles_input()
+									&:nth-of-type(3)
+										margin-bottom 10px	
+									&:nth-of-type(4)
+										margin-top 0
+										margin-bottom 0
+										font-size 0.9rem
+									&:nth-of-type(5)
+										margin-top 8px
+										margin-bottom 20px
+									&:nth-of-type(6)
+										.col 
+											display flex 
+											flex-flow row nowrap
+											justify-content center
+											align-content center
+											p 
+												width 105.5px
+												height 20px
+												font-size 1.1rem
+												position relative
+												&:before, &:after
+													content ''
+													width 20px
+													height 1px
+													background-color plomo-texto
+													position absolute
+													top 50%
+													-webkit-transform translateY(-50%)
+													transform translateY(-50%)
+												&:before
+													left -30px
+												&:after
+													right -30px
+									&:nth-of-type(7)
+										margin-bottom 0
+										.col 
+											a 
+												width 40px
+												height 40px
+												font-size 1.1rem
+												padding 10px 
+												border-radius 50%
+												text-align center
+												margin 0 20px
+											.icon-facebook
+												color azul-facebook
+												border 2px solid azul-facebook
+											.icon-twitter
+												color celeste-twitter
+												border 2px solid celeste-twitter
+											.icon-google-plus
+												color rojo-google-plus
+												border 2px solid rojo-google-plus
+							.signup 
+								display none
+								width 100%
+								.row 
+									&:nth-of-type(1)
+										margin-top 10px
+										margin-bottom 20px
+										.col 
+											p
+												font-size 1.4rem
+												color plomo-texto
+									&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4)
+										margin-bottom 0
+										.col
+											input 
+												styles_input()
+									&:nth-of-type(7)
+										margin-top 10px
+										margin-bottom 0px
+										
+									
+	.row-footer
+		margin-bottom 0
+		.col 
+			p 
+				width 100%
+				font-size 0.9rem
+				color plomo-texto
+				text-align center
+				padding 10px
+				position absolute
+				left 0
+				bottom 0
+				
+@media screen and (min-width: 400px)
+	.login-signup-container
+		.row-login-signup
+			.col 
+				.login-signup
+					width 320px
+					.row 
+						&:nth-of-type(2)
+							.col 
+								.login 
+									.row 
+										&:nth-of-type(6)
+											.col 
+												p 
+													&:before, &:after
+														width 50px
+													&:before
+														left -60px
+													&:after
+														right -60px
+
+@media screen and (min-width: 900px)
+	.login-signup-container
+		.row-login-signup
+			.col 
+				.login-signup
+					.row 
+						&:nth-of-type(1)
+							.col 
+								.tab-links
+									a 
+										display inline-block
+										line-height 60px
+										text-align center
+										span 
+											font-size 1rem
+											line-height normal
+										p 
+											display inline-block
+											font-size 1rem
+											margin-left 10px
+		 

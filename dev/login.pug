@@ -1,0 +1,82 @@
+doctype html
+html(lang='es')
+	head 
+		meta(charset="utf-8")
+		title Zonngo | login
+		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='./client/css/materialize.min.css')
+		link(rel='stylesheet', href='https://file.myfontastic.com/eNHTdnS7yKsKbGkf7HwvVT/icons.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/menu.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/login.css')
+	body
+		include ./blocks/menu.pug
+		section.login-signup-container
+			.container
+				.row.row-login-signup
+					.col.s12
+						.login-signup
+							.row
+								.col.s12
+									.tab-links
+										a.tab-link-login.tab-link-selected
+											span.icon-key
+											p Iniciar Sesión
+										a.tab-link-signup
+											span.icon-plus
+											p Registrarme
+							.row
+								.col.s12
+									.login
+										.row
+											.col.s12
+												p Iniciar Sesión
+										.row
+											.col.s12
+												input(type='text' placeholder='nombre de usuaario')
+										.row
+											.col.s12
+												input(type='password', placeholder='contraseña')
+										.row
+											.col.s12
+												a(href='password-recover.html') ¿Olvidé mi contraseña?
+										.row
+											.col.s12
+												a(href='containers.html').btn Ingresar
+										.row
+											.col.s12
+												p O ingresa con
+										.row
+											.col.s12
+												a(href='#').icon-facebook
+												a(href='#').icon-twitter
+												a(href='#').google-pluszoom-in
+									.signup
+										.row
+											.col.s12
+												p Registrarme
+										.row
+											.col.s12
+												input(type='text', placeholder='nombre')
+										.row
+											.col.s12
+												input(type='password', placeholder='create una contraseña')
+										.row
+											.col.s12
+												input(type='text', placeholder='correo electrónico')
+										.row
+											.col.s12
+												input(type='checkbox', id='condition1')
+												label(for='condition1') Texto de ejemplo1	
+										.row
+											.col.s12
+												input(type='checkbox', id='condition2')
+												label(for='condition2') Texto de ejemplo2	
+										.row
+											.col.s12
+												a(href='home.html').btn Registrar
+		include ./blocks/footer.pug
+	
+		script(src='./client/js/jquery-3.1.1.min.js')
+		script(src='./client/js/materialize.min.js')
+		script(src='./client/js/main.js')

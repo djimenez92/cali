@@ -1,0 +1,197 @@
+@font-face 
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face 
+	font-family 'Raleway-Regular'
+	src url(../fonts/Raleway/Raleway-Regular.ttf)
+@font-face
+	font-family 'Raleway-Medium'
+	src url(../fonts/Raleway/Raleway-Medium.ttf)
+	
+rosado = #FC6765
+blanco = #fff
+naranja = #fcae5a
+amarillo = #fdd13e
+naranja-oscuro = #FCA241
+amarillo-oscuro = #FDC50C
+naranja-muy-oscuro = #f88b15
+plomo = #eef6ff
+//#f6f9fc
+plomo-texto = #6b7c93
+plomo-borde = #c2dfff
+azul = #1B2B69
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html
+	font-size 14px
+body 
+	font-family 'Raleway-Light'
+characteristic_section(background)
+	width 100%
+	height auto
+	background-color background
+	padding 80px 0
+	position relative
+	left 0
+	top 0
+characteristic_section_title(color)
+	color color
+	font-size 1.6rem
+	font-family 'Raleway-Regular'
+	font-weight bolder
+	text-align center 
+styles_before_after(background)
+	&:before
+		content ''
+		width 30px
+		height 3px 
+		background-color background
+		position absolute
+		left 0
+		bottom -5px
+.flex-column-wrap
+	display flex
+	flex-flow column wrap 
+	justify-content center 
+	align-items center
+.flex-row-wrap
+	display flex 
+	flex-flow row wrap 
+	justify-content center
+	align-items center
+.btn 
+	height 40px 
+	line-height 40px
+	background-color rosado
+	box-shadow none
+	&:hover
+		background-color rosado
+		box-shadow none
+header
+	nav 
+		background-color transparent
+.prices-container
+	width 100%
+	height 450px
+	background-image url(../img/fondo-precios.jpg)
+	background-size cover
+	background-position center
+	position relative 
+	left 0
+	top 0
+	.prices-background
+		width 100%
+		height 100%
+		background-color rgba(rosado, 0.85)
+		position absolute
+		left 0
+		top 0
+		.container 
+			.row
+				&:nth-of-type(1)
+					.col 
+						p 
+							font-size 2rem
+							font-family 'Raleway-Medium'
+							font-weight bolder
+							text-align center
+				&:nth-of-type(2)
+					margin-bottom 0
+					.col 
+						p 
+							font-size 1.3rem
+				.col 
+					p 
+						color blanco
+						text-align center
+.community-container, .benefits-container
+	characteristic_section(blanco)
+	.container
+		.row 
+			.col 
+				p 
+					color plomo-texto
+					font-size 1.2rem
+					text-align left
+					span
+						color rosado
+						font-size 1.2rem
+						margin-right 15px
+			&:nth-of-type(1)
+				margin-bottom 50px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(6)
+				margin-top 50px
+				margin-bottom 0
+.benefits-container
+	characteristic_section(plomo)
+	.container
+		.row 
+			&:nth-of-type(5)
+				margin-bottom 0
+.rate-services
+	characteristic_section(blanco)
+	.container 
+		.row
+			.col 
+				p 
+					color plomo-texto
+					font-size 1.2rem
+					text-align center
+			&:nth-of-type(1)
+				margin-bottom 50px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(3)
+				margin-top 40px
+				margin-bottom 0
+.frequent-questions
+	characteristic_section(plomo)
+	.container
+		.row 
+			.col 
+				p 
+					color plomo-texto
+					font-size 1.2rem
+					text-align center
+					span 
+						color rosado
+						font-size 1.4rem
+						margin-right 15px
+			&:nth-of-type(1)
+				margin-bottom 50px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(6)
+				margin-top 60px
+				.col 
+					p 
+						font-size 1.3rem
+						font-family 'Raleway-Regular'
+			&:nth-of-type(8)
+				margin-top 40px
+				margin-bottom 0
+				
+@media screen and (min-width: 993px)
+	.prices-container
+		.prices-background
+			.container 
+				.row
+					&:nth-of-type(1)
+						.col 
+							p 
+								font-size 3.5rem

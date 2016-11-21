@@ -1,0 +1,437 @@
+@font-face
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+	font-family 'Raleway-Regular'
+	src url(../fonts/Raleway/Raleway-Regular.ttf)
+@font-face 
+	font-family 'Raleway-Medium'
+	src url(../fonts/Raleway/Raleway-Medium.ttf)
+	
+naranja = #fcae5a
+amarillo = #fdd13e
+naranja-oscuro = #FCA241
+amarillo-oscuro = #FDC50C
+naranja-muy-oscuro = #f88b15
+blanco = #fff
+plomo = #eef6ff
+//#f6f9fc
+plomo-texto = #6b7c93
+rosado = #FC6765
+plomo-borde = #c2dfff
+azul = #1B2B69
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html
+	font-size 14px
+body
+	font-family 'Raleway-Light'
+	overflow-x hidden
+	
+characteristic_section(background)
+	width 100%
+	height auto
+	background-color background
+	padding 80px 0
+	position relative
+	left 0
+	top 0
+characteristic_section_title(color)
+	color color
+	font-size 1.6rem
+	font-family 'Raleway-Regular'
+	font-weight bolder
+	text-align center
+btn_color(color)
+	font-family 'Raleway-Medium'
+	border 2px solid color
+	color color
+	&:hover
+		background-color color
+		color blanco
+styles_before_after(background)
+	&:before
+		content ''
+		width 30px
+		height 3px 
+		background-color background
+		position absolute
+		left 0
+		bottom -5px
+
+.btn 
+	display flex 
+	flex-flow row nowrap
+	justify-content center 
+	align-items center
+	width 200px
+	height 45px
+	font-size 1.2rem
+	font-family 'Raleway-Regular'
+	background-color transparent
+	border 2px solid blanco
+	box-shadow none
+	&:hover
+		background-color blanco
+		color naranja-oscuro
+		box-shadow none
+.flex-row-wrap
+	display flex 
+	flex-flow row wrap
+	justify-content center
+	align-items center
+.flex-column-wrap
+	display flex 
+	flex-flow column wrap 
+	justify-content center 
+	align-items center
+.peru
+	background-image url(../img/peru.png)
+.esparragos
+	background-image url(../img/esparragos.jpg)
+.country
+	width 100px
+	height 60px
+	background-position center 
+	background-size cover 
+.step1-image
+	background-image url(../img/step1.png)
+.step2-image
+	background-image url(../img/step2.png)
+.step3-image
+	background-image url(../img/step3.png)
+.step4-image
+	background-image url(../img/step4.png)
+.step-image 
+	width 100%
+	height 300px
+	background-position center 
+	background-size cover 
+header
+	z-index 2
+	nav
+		background-color transparent
+		z-index 3
+.cover-page-principal-container
+	width 100%
+	height 100vh
+	background-image url(../img/fondo-principal.jpg)
+	background-position center 
+	background-size cover 
+	position relative
+	left 0
+	top 0
+	z-index 1
+	.cover-page-principal-background
+		display flex
+		flex-flow column wrap
+		justify-content center 
+		align-items center
+		width 100%
+		height 100%
+		background linear-gradient(to right bottom, 
+									rgba(rosado, .85) 0%,
+									rgba(naranja-muy-oscuro, .85) 100%)
+		position absolute
+		left 0
+		top 0
+		.container
+			.cover-page-principal-content
+				.row
+					.col 
+						display flex 
+						flex-flow row nowrap
+						justify-content center
+						p 
+							color blanco
+							text-align center 
+					&:nth-of-type(1)
+						.col 
+							p 
+								width 90%
+								font-size 1.9rem
+								font-family 'Raleway-Medium'
+								font-weight bolder
+					&:nth-of-type(2)
+						margin-bottom 50px
+						.col 
+							p 
+								font-size 1.3rem
+								&:nth-of-type(2)
+									display none
+					&:nth-of-type(3)
+						margin-bottom 0
+	span
+		color blanco
+		font-size 4rem
+		font-weight bolder
+		position absolute
+		left 50%
+		bottom 0
+		-webkit-transform translateX(-50%)
+		transform translateX(-50%)
+		cursor pointer
+.in-the-media
+	characteristic_section(blanco)
+	.container 
+		.row 
+			&:nth-of-type(1)
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				margin-top 40px
+				margin-bottom 0
+.offers-container
+	characteristic_section(plomo)
+	.container
+		.row
+			.col 
+				p 
+					font-size 1.3rem
+					color plomo-texto
+				.country
+					margin-bottom 20px 
+				.offer-information
+					margin-top 10px
+					p 
+						text-align center
+				a 
+					btn_color(naranja-oscuro)
+					margin-top 20px 	
+			&:nth-of-type(1)
+				margin-bottom 60px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				margin-bottom 0
+				.col 
+					&:nth-of-type(1), &:nth-of-type(2)
+						margin-bottom 100px
+.coffee-supplies
+	characteristic_section(blanco)
+	.container
+		.row 
+			.col 
+				p 
+					font-size 1.3rem
+					color plomo-texto
+			&:nth-of-type(1)
+				margin-bottom 60px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				.col 
+					.step-info
+						width 100%
+						height 180px
+						padding 0 20px
+						padding-top 75px
+						background-color plomo 
+						border 1px solid plomo-borde
+						position relative
+						p 
+							text-align center
+						.number
+							width 70px
+							height 70px
+							background-color naranja
+							font-size 2rem
+							font-family 'Raleway-Medium'
+							font-weight bolder
+							color blanco
+							border-radius 50%
+							position absolute
+							top -25px
+							left 50%
+							-webkit-transform translateX(-50%)
+							transform translateX(-50%)
+.photos
+	characteristic_section(plomo)
+	.container
+		.row 	
+			&:nth-of-type(1)
+				margin-bottom 60px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(5)
+				margin-bottom 0
+.shipping-arrangements	
+	characteristic_section(blanco)	
+	.container
+		.row 
+			&:nth-of-type(1)
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				.col 
+					.modality
+						margin-top 50px
+						p 
+							color plomo-texto
+							text-align center
+							&:nth-of-type(1)
+								font-size 1.5rem
+								font-family 'Raleway-Regular'
+								margin-bottom 20px
+							&:nth-of-type(2)
+								font-size 1.3rem
+.community
+	characteristic_section(plomo)
+	.container
+		.row 
+			&:nth-of-type(1)
+				margin-bottom 40px
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				.col 
+					margin 20px 0
+					p 
+						&:nth-of-type(1)
+							font-size 3rem 
+							color amarillo
+							font-family 'Raleway-Medium'
+						&:nth-of-type(2)
+							font-size 1.3rem
+							color plomo-texto
+.what-they-say
+	characteristic_section(blanco)
+	.container
+		.row 
+			&:nth-of-type(1)
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				margin-top 60px
+				margin-bottom 30px
+				.col 
+					p 
+						text-align center
+						font-size 1.3rem
+						color plomo-texto
+						&:nth-of-type(2)
+							font-size 1.2rem
+							color rgba(plomo-texto, .8)
+							margin-top 20px
+			&:nth-of-type(3)
+				.col 
+					span 
+						font-size 1.6rem
+						background-color amarillo
+						color blanco
+						margin 0 20px
+						padding 10px 20px
+.join-up
+	characteristic_section(plomo)
+	.container
+		.row 
+			&:nth-of-type(1)
+				.col 
+					p 
+						characteristic_section_title(plomo-texto)
+						position relative
+						styles_before_after(amarillo)
+			&:nth-of-type(2)
+				margin-top 40px
+				margin-bottom 0
+				.col 
+					a 
+						btn_color(naranja-oscuro)
+						
+@media screen and (min-width: 601px)
+	.cover-page-principal-container
+		.cover-page-principal-background
+			.container
+				.cover-page-principal-content
+					.row 
+						&:nth-of-type(1)
+							.col 
+								p 
+									font-size 2.6rem
+						&:nth-of-type(2)
+							margin-top 40px 
+							margin-bottom 80px
+							.col 
+								p 
+									&:nth-of-type(1)
+										display none
+									&:nth-of-type(2)
+										display block
+	.offers-container
+		.container
+			.row 
+				&:nth-of-type(2)
+					.col 
+						&:nth-of-type(3)
+							-webkit-transform translateX(-50%)
+							transform translateX(-50%)
+	.coffee-supplies
+		.container
+			.row 
+				&:nth-of-type(2)
+					.col 
+						padding 0
+@media screen and (min-width: 993px)
+	.offers-container
+		.container
+			.row
+				.col 
+					p 
+						font-size 1.2rem
+				&:nth-of-type(2)
+					align-items flex-start
+					.col 
+						a 
+							margin-bottom 0
+	.offers-container
+		.container
+			.row 
+				&:nth-of-type(2)
+					.col 
+						&:nth-of-type(1), &:nth-of-type(2)
+							margin-bottom 0
+						&:nth-of-type(3)
+							-webkit-transform translateX(0)
+							transform translateX(0)
+	.coffee-supplies
+		.container
+			width 80%
+			.row 
+				.col 
+					p 
+						font-size 1.2rem
+	.shipping-arrangements	
+		.container
+			.row 
+				&:nth-of-type(2)
+					.col 
+						.modality
+							padding 0 40px
+							p 
+								&:nth-of-type(2)
+									font-size 1.2rem

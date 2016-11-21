@@ -1,0 +1,118 @@
+@font-face 
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+	font-family 'Raleway-Medium'
+	src url(../fonts/Raleway/Raleway-Medium.ttf)
+
+naranja-oscuro = #FCA241
+amarillo-oscuro = #FDC50C
+naranja-muy-ocuro = #f88b15
+rosado = #FC6765
+blanco = #fff
+
+.flex-row-wrap
+	display flex 
+	flex-flow row wrap
+	justify-content center
+	align-items center
+.flex-column-wrap
+	display flex 
+	flex-flow column wrap 
+	justify-content center
+	align-items center
+
+footer
+	width 100%
+	height 590px
+	background-image url(../img/fondo-footer.jpeg)
+	background-position center
+	background-size cover
+	position relative
+	left 0
+	top 0
+	.footer-background
+		width 100%
+		height 100%
+		background-color rosado
+		background linear-gradient(to right bottom,
+									rgba(amarillo-oscuro, .85) 0%,
+									rgba(naranja-muy-ocuro, .85) 100%)
+		position absolute
+		left 0
+		top 0
+		p, a 
+			color blanco
+		.container
+			.social-networks
+				.row
+					margin-top 50px
+					.col 
+						a 
+							display flex
+							flex-flow row nowrap
+							justify-content center
+							align-items center
+							font-size 1.5rem
+							border-radius 50%
+							border 2px solid blanco
+							padding 15px
+							margin 0 10px
+			.other-links
+				.row
+					margin-top 50px
+					margin-bottom 0
+					.col 
+						&:nth-of-type(3), &:nth-of-type(4)
+							margin-top 30px
+						p 
+							font-size 1.2rem
+							font-family 'Raleway-Medium'
+							font-weight bolder
+							text-align center
+							margin-bottom 10px
+						ul 
+							li 
+								text-align center
+								margin-bottom 10px
+								a 
+									font-family 'Raleway-Light'
+									font-size 1.1rem
+			.copyright
+				width 100%
+				height 40px
+				position absolute
+				left 0
+				bottom 0
+				.row
+					margin-bottom 0
+					.col 
+						p 
+							font-size 1.05rem
+							font-family 'Raleway-Light'
+@media screen and (min-width: 600px)
+	footer 
+		.footer-background
+			.container
+				.social-networks
+					.row 
+						.col 
+							a 
+								margin 0 20px
+@media screen and (min-width: 993px)
+	footer 
+		height 440px
+		.footer-background
+			.container
+				.social-networks
+					.row 
+						.col 
+							a 
+								margin 0 30px
+				.other-links
+					.row 
+						.col 
+							&:nth-of-type(3), &:nth-of-type(4)
+								margin-top 0
+							
+	

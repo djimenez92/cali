@@ -1,0 +1,161 @@
+@font-face
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+	font-family 'Raleway-Regular'
+	src url(../fonts/Raleway/Raleway-Regular.ttf)
+@font-face
+	font-family 'Raleway-Medium'
+	src url(../fonts/Raleway/Raleway-Medium.ttf)
+	
+rosado = #FC6765
+blanco = #fff
+naranja = #fcae5a
+amarillo = #fdd13e
+naranja-oscuro = #FCA241
+amarillo-oscuro = #FDC50C
+naranja-muy-oscuro = #f88b15
+plomo-fondo = #eef6ff
+//#f6f9fc
+plomo-texto = #6b7c93
+plomo-borde = #c2dfff
+azul = #1B2B69
+
+btn_styles(background, color, border)
+	background-color background
+	color color
+	border 2px solid border
+	&:hover
+		background-color background
+image_styles()
+	width 300px
+	height 300px
+	background-position center
+	background-size cover
+section_styles(background)
+	width 100%
+	height auto
+	background-color background
+	padding 80px 0
+	position relative
+	left 0
+	top 0
+styles_p(color)
+	font-size 1.3rem
+	color color
+	text-align center
+styles_section_title()
+	font-size 2.2rem
+	font-family 'Raleway-Medium'
+	margin-bottom 30px
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	
+html
+	font-size 14px
+body 
+	font-family 'Raleway-Light'
+
+.btn 
+	display flex 
+	flex-flow row nowrap
+	justify-content center
+	align-items center
+	height 45px 
+	line-height normal
+	box-shadow none
+	font-family 'Raleway-Regular'
+	padding 0 38px
+	&:hover
+		box-shadow none
+.flex-column-wrap
+	display flex 
+	flex-flow column wrap 
+	justify-content center
+	align-items center
+.flex-row-wrap
+	display flex 
+	flex-flow row wrap 
+	justify-content center 
+	align-items center
+header
+	nav 
+		background-color rosado
+		box-shadow none
+		border-bottom 1px solid blanco
+		position relative !important
+.supply-container
+	section_styles(rosado)
+	.container 
+		.row
+			margin-bottom 0
+			.col 
+				&:nth-of-type(1)
+					p 
+						styles_p(blanco)
+						&:nth-of-type(1)
+							styles_section_title()
+					a 
+						btn_styles(transparent, blanco, blanco)
+						margin-top 50px
+						margin-bottom 60px
+				&:nth-of-type(2)
+					.features-image
+						image_styles()
+						background-image url(../img/features-principal.png)
+.producers-container
+	section_styles(blanco)
+	.container 
+		.row 
+			margin-bottom 0
+			.col 
+				&:nth-of-type(1)
+					.producers-image
+						image_styles()
+						background-image url(../img/producers.png)
+				&:nth-of-type(2)
+					p 
+						styles_p(plomo-texto)
+						&:nth-of-type(1)
+							styles_section_title()
+							margin-top 30px
+					a 
+						btn_styles(transparent, rosado, rosado)
+						margin-top 50px
+.benefits-container
+	section_styles(plomo-fondo)
+	.container 
+		.row
+			&:nth-of-type(1)
+				.col 
+					p 
+						styles_p(plomo-texto)
+						styles_section_title()
+			&:nth-of-type(2), &:nth-of-type(3)
+				margin-bottom 0
+				.col 
+					.benefits 
+						background-color blanco
+						border 1px solid plomo-borde
+						padding 40px 20px
+						margin-bottom 60px
+						span
+							font-size 4rem
+							color rosado
+						p 
+							styles_p(plomo-texto)
+							&:nth-of-type(1)
+								font-size 1.5rem
+								font-family 'Raleway-Regular'
+								margin 20px 0
+			&:nth-of-type(3)
+				.col 
+					&:nth-of-type(3)
+						.benefits	
+							margin-bottom 0
+						
+	
+	

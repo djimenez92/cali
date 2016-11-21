@@ -1,0 +1,69 @@
+@font-face
+	font-family 'Raleway-Light'
+	src url(../fonts/Raleway/Raleway-Light.ttf)
+@font-face
+	font-family 'Raleway-Regular'
+	src url(../fonts/Raleway/Raleway-Regular.ttf)
+@font-face 
+	font-family 'Raleway-Medium'
+	src url(../fonts/Raleway/Raleway-Medium.ttf)
+
+azul = #5A6AA6
+amarillo = #fdd13e
+amarillo-oscuro = #FDC50C
+naranja-muy-oscuro = #f88b15
+
+.flex-row-wrap
+	display flex 
+	flex-flow row wrap
+	justify-content center
+	align-items center
+.flex-column-wrap
+	display flex 
+	flex-flow column wrap 
+	justify-content center 
+	align-items center
+
+header
+	nav 
+		position absolute
+		left 0
+		top 0
+		z-index 999
+		.nav-wrapper
+			.container
+				height 100%
+				.brand-logo
+					font-family 'Raleway-Medium'
+					font-weight bolder
+					letter-spacing 0.1rem
+					z-index 2 
+				.button-collapse
+					display flex
+					flex-flow column wrap 
+					justify-content center
+					align-items center
+					span 
+						height 3rem
+						font-size 3rem
+				.hide-on-med-and-down
+					li 
+						margin 0 20px
+						a 
+							font-family 'Raleway-Light'
+							font-size 1.3rem
+							&:hover
+								background-color azul
+				.side-nav
+					width 270px
+					background-image url(../client/img/fondo-menu.jpeg)
+					background-size cover
+					background-position left center
+			
+@media screen and (min-width: 993px)
+	header
+		nav 
+			.nav-wrapper
+				.container
+					.button-collapse
+						display none

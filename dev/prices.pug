@@ -1,0 +1,125 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		title Cali | Precios
+		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximun-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='./client/css/materialize.min.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/prices.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/menu.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', href='https://file.myfontastic.com/eNHTdnS7yKsKbGkf7HwvVT/icons.css')
+	body 
+		include ./blocks/menu.pug
+		section.prices-container
+			.prices-background.flex-column-wrap
+				.container
+					.row
+						.col.s12.flex-row-wrap
+							p SISTEMA DE PRECIO SENCILLO
+					.row
+						.col.s12.flex-row-wrap
+							p Únase a la comunidad de forma gratuita y apoya a Cali a abastecer de productos de calidad para todo el mundo
+		section.community-container.flex-column-wrap
+			.container
+				.row
+					.col.s12.flex-row-wrap.flex-column-wrap
+						p La comunidad es 100% gratuita
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Descubra los orígenes, conozca los productores
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Siga a los productores y reciba actualizaciones en vivo desde las fincas
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Participa en la comunidad
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Establezca relación con los productores
+				.row
+					.col.s12.flex-row-wrap
+						a(href='#').btn Unirme a la comunidad
+		section.benefits-container
+			.container
+				.row
+					.col.s12.flex-row-wrap
+						p Beneficios de utilizar Cali
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Abastézcase de café desde su origen, sin compliciones
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Conozca lo que se lleva cada uno en la cadena de suministro
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Dé usted mismo la prima directamente los cultivadores
+				.row
+					.col.s12
+						p 
+							span.icon-check-1
+							| Calcule instantáneamente el precio total de envío, hasta tu puerta
+		section.rate-services
+			.container
+				.row
+					.col.s12.flex-row-wrap
+						p Tasa de servicios
+				.row
+					.col.s12
+						p En ventas exitosas, algrano aplica un cargo por servicio sobre el precio FOB. El valor del cargo por servicio varía entre un 10% a un 20% en función del origen.
+				.row
+					.col.s12
+						p Esto financia: el desarrollo y los costos operativos de la comunidad en línea y el mercado, la selección y formación de los agricultores en el uso de algrano, la puesta en marcha de una cadena de suministro eficiente y, finalmente, la gestión de los envíos de sus cafés.
+		section.frequent-questions
+			.container
+				.row
+					.col.s12.flex-row-wrap
+						p Preguntas frecuentes
+				.row
+					.col.s12
+						p 
+							span.icon-megaphone
+							| ¿Qué significa el precio FOB?
+				.row
+					.col.s12
+						p Los precios Flete a Bordo o Franco a Bordo incluyen todos los costos de producción y manejo en el origen. Más precisamente, el precio pagado al productor, la cuota de especialidad (o de calidad), el molido, el ensacado, el transporte por carretera en el origen, las cuotas de exportación, la garantía de calidad y la cuota del servicio algrano. En otras palabras, todos los costos desde el árbol hasta que sus sacos de café son cargados en el barco en el puerto de origen.
+				.row
+					.col.s12
+						p 
+							span.icon-megaphone
+							| ¿Cúal es la cuota de servicios de Cali?
+				.row
+					.col.s12
+						p La comunidad es gratis. Cuando se establece una relación comercial exitosa, algrano percibe un porcentaje sobre cada venta. Con esta cuota de servicio, algrano puede cubrir los gastos de gestión de calidad en el origen y el destino, la selección concienzuda de socios, la organización del envío, el seguro de transporte y las finanzas de comercio, el apoyo en sus reclamos contra los vendedores, el desarrollo y manejo de software. Al final, las características comerciales subsidian los elementos de la comunidad. Y esto es sólo el principio: cuando algrano pueda demostrar su sostenibilidad financiera, se darán a conocer elementos más grandes, ¡con el mismo espíritu de reducir la distancia entre los productores y los tostadores!
+				.row
+					.col.s12
+						p 
+							span.icon-megaphone
+							| ¿Cúales son las modalidades de pago?
+				.row
+					.col.s12
+						p Todas las cantidades más pequeñas de $1,000 USD tienen que ser pagadas con tarjeta de crédito. Actualmente aceptamos Visa, Mastercard y American Express. Para cantidades superiores a $1,000 USD se pide un pago inicial de $1,000 USD con tarjeta de crédito. La cantidad restante será facturada por correo electrónico (en neto 10 días después de realizar el pedido). La moneda del café es el dólar estadounidense. Podríamos aceptar otras monedas en el futuro.
+				.row
+					.col.s12.flex-row-wrap
+						a(href='#').btn Otras preguntas	
+		
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery-3.1.1.min.js')
+		script(src='./client/js/materialize.min.js') 
+		script(src='./client/js/prices.js')
+	
