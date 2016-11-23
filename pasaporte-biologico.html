@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Cali | Pasaporte biologico</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./client/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/prices.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/main.css">
+    <link rel="stylesheet" href="fonts/style.css">
+  </head>
+  <body>
+     <!--menu-->
+
+            <ul  class="topnav" id="myTopnav">
+              <li class="left"><h1 style="margin-right=700px;">Cali</h1></li>
+              <li clas="step-image"><a href="/"><img with="20" src="./client/img/gb.png" alt="" /></a></li>
+              <li clas="step-image"><a href="/"><img with="20" src="./client/img/es.png" alt="" /></a></li>
+              <li> <a href="#">Encuentre productores</a></li>
+              <li> <a href="#">Contenedores</a></li>
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+            </ul>
+      <!--menu-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Mi cuenta</a>
+        <a href="#">Parcelas</a>
+        <a href="#">Salir</a>
+      </div>
+      <div class="content-box">
+        <div class="contenido">
+          <div class="modal-header">
+          </div>
+
+          <div class="menu-opcional">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Joaquin Gonzalez</span>
+
+          </div>
+          <h3><a href="datos-parcela.html">Parcelas > </a> <a href="#">Parcela 1 > </a> Establecer pasaporte</h3>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="form-container">
+              <div class="left">
+                    <div class="pacerl-form">
+                      <div class="form-item fullsize parent-elem">
+                            <h1>Escoge Campaña</h1>
+                            <select> <option value=Provincia > 2016/2017 </select>
+                        </div>
+                        <div class="form-item fullsize parent-elem">
+                          <h1>Cultivo:</h1>
+                              <select> <option value=Provincia > Especie (obligatorio) </select>
+                          </div>
+                          <div class="form-item fullsize">
+                            <select> <option value=municipio> Variedad (obligatorio) </select>
+                          </div>
+                        <div class="form-item fullsize parent-elem">
+                          <h1>Superficie cultivada (Ha)</h1>
+                          <input type="number" placeholder="Ej. 24 (obligatorio)" >
+                          </div>
+                          <div class="form-item fullsize parent-elem">
+                            <h1>Distribucion de cultivo</h1>
+                            <input type="text" min="0" placeholder="Distribucion de cultivo" >
+                            </div>
+                          <div class="form-item fullsize parent-elem">
+                            <h1>¿Semilla cultivada?</h1>
+                            <div class="row">
+                              <form>
+                                <input type="radio" name="gender" value="si" checked> Si<br>
+                                <input type="radio" name="gender" value="no"> No<br>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="form-item fullsize parent-elem">
+                            <h1>¿Semilla tratada?</h1>
+                          </div>
+                          <div class="row">
+                            <form>
+                              <input type="radio" name="gender" value="si" checked> Si<br>
+                              <input type="radio" name="gender" value="no"> No<br>
+                            </form>
+                          </div>
+                          <div class="form-item fullsize parent-elem">
+                            <h1>¿Es una semilla modificada genéticamente (OGM)?</h1>
+                          </div>
+                          <div class="row">
+                            <form>
+                              <input type="radio" name="gender" value="si" checked> Si<br>
+                              <input type="radio" name="gender" value="no"> No<br>
+                            </form>
+                          </div>
+                       </div>
+                         </div>
+                           <div class="clearfix-20"></div>
+                         <div class="step-image">
+                           <img src="client/img/map.png" alt="">
+                           </div>
+                      </div>
+                      <div class="content-boton ">
+                        <div class="content-box fondo">
+                          <a class="comenzar"href="#">Finalizar</a>
+                        </div>
+                      </div>
+                    </div>
+
+          <script>function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+          </script>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+  </body>
+  </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Cali | Datos del agricultor</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./client/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/prices.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/main.css">
+    <link rel="stylesheet" href="fonts/style.css">
+  </head>
+  <body>
+      <!--menu-->
+
+            <ul  class="topnav" id="myTopnav">
+              <li class="left"><h1 style="margin-right=700px;">Cali</h1></li>
+              <li clas="step-image"><a href="/"><img with="20" src="./client/img/gb.png" alt="" /></a></li>
+              <li clas="step-image"><a href="/"><img with="20" src="./client/img/es.png" alt="" /></a></li>
+              <li><a  href="index.html">HOME</a></li>
+              <li><a href="prices.html">Productos</a></li>
+              <li><a href="features.html">Funcionalidades</a></li>
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+            </ul>
+      <!--menu-->
+
+
+            <div class="contenido-modal">
+              <div class="modal-header">
+                <h4 class="modal-titulo2 text-center">¡Bienvenido a Cali!     Rellena con información de tu parcela </h4>
+              </div>
+            <div class="container">
+              <div class="modal-contenido">
+                <div class="form-group">
+                  <div class="form-group nombre">
+                    <h1>Selecciona tu localidad:</h1>
+                    <select> <option value=provincia> Provincia </select>
+                  </div>
+                  <div class="form-group">
+                    <select> <option value=municipio> Municipio </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-group nombre">
+                    <h1>Datos generales de la explotación:</h1>
+                    <select> <option value=cultivo> Cultivo principal </select>
+                  </div>
+                  <div class="form-group">
+                    <input id="superficie" name="superficie" type="text" class="form-control" maxlength="35" placeholder="Superfice total (en ha)" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-group nombre">
+                    <h1>Certificaciones:</h1>
+                    <select> <option value=certificacion> Sin certificacion </select>
+                  </div>
+                </div>
+                  <a class="comenzar"href="datos-parcela.html">Comenzar en Cali</a>
+                </div>
+              </div>
+            </div>
+
+          <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+          </script>
+  </body>
+  </html>

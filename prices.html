@@ -3,63 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>Cali | Precios</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximun-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./client/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="./client/css/prices.css">
-    <link rel="stylesheet" type="text/css" href="./client/css/menu.css">
-    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="./client/css/main.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="fonts/style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav-wrapper">
-          <div class="container"><a class="brand-logo" href="index.html">Cali</a>
-            <a class="button-collapse" href="#" data-activates="mobile-demo"><span class="icon-menu"></span></a>
-            <ul class="right hide-on-med-and-down">
+    <link rel="stylesheet" href="./client/css/materialize.min.css">
+    <link rel="stylesheet" href="./client/css/main.css">
+    <link rel="stylesheet" href="./client/css/menu.css">
+    <link rel="stylesheet" href="./client/css/footer.css">
+    <link rel="stylesheet" href="./client/css/modal.css">
+    <link rel="stylesheet" href="./client/css/prices.css">
+    </head>
+    <body>
+
+
+      <!--menu-->
+
+            <ul class="topnav" id="myTopnav">
+              <li class="left"><h1 >Cali</h1></li>
               <li clas="step-image"><a href="/"><img with="20" src="./client/img/gb.png" alt="" /></a></li>
               <li clas="step-image"><a href="/"><img with="20" src="./client/img/es.png" alt="" /></a></li>
-              <li><a href="index.html">HOME</a></li>
+              <li><a  href="index.html">HOME</a></li>
               <li><a href="prices.html">Productos</a></li>
               <li><a href="features.html">Funcionalidades</a></li>
               <li><a href="#">Acesso Clientes</a></li>
-              <li>  <a href="#openmodal" >Acceso Socios</a></li>
+              <li> <a class="cuadro" herf="#" style="cursor:pointer" onclick="openNav()"> Acesso socios</a></li>
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
             </ul>
-            <section id="openmodal"class="modalDialog">
-                <div class="contenedor">
-              <section class="modal">
-                <div class="modal-contenido">
-                  <div class="modal-header">
-                    <a href="#close" class="close"> X </a>
-                    <h4 class="modal-titulo text-center">¿Eres nuevo en Cali?</h4>
-                    <p class="text-center">Registrate ahora</p>
+      <!--menu-->
+
+            <section id="openmodal"class="sidenavx">
+            <div class="contenedorx">
+              <section class="modalx">
+                <div class="modal-contenidox">
+                  <div class="modal-headerx">
+                      <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                    <h4 class="modal-titulox text-centerx">¿Eres nuevo en Cali?</h4>
+                    <p class="text-centerx">Registrate ahora</p>
                     <p></p>
                   </div>
-                        <div class="modal-body">
-                          <div class="login-container">
-                            <div class="form-group nombre">
-                              <label class="sr-only" for="nombre">Ingresa tunombre</label>
-                              <input id="signup-nombre" name="nombre" type="text" class="form-control login-name" maxlength="35" placeholder="Ingresa tu nombre" required="">
+                        <div class="modal-bodyx">
+                          <div class="login-containerx">
+                            <div class="form-groupx nombre">
+                              <label class="sr-onlyx" for="nombre">Ingresa tunombre</label>
+                              <input id="signup-nombre" name="nombre" type="text" class="form-controlx login-name" maxlength="35" placeholder="Ingresa tu nombre" required="">
                             </div>
-                            <div class="form-group email">
-                              <label class="sr-only" for="email">Ingresa tu correo electronico</label>
-                              <input id="signup-nombre" name="email" type="text" class="form-control login-name" maxlength="35" placeholder="Ingresa tu correo" required="">
+                            <div class="form-groupx email">
+                              <label class="sr-onlyx" for="email">Ingresa tu correo electronico</label>
+                              <input id="signup-nombre" name="email" type="text" class="form-controlx login-name" maxlength="35" placeholder="Ingresa tu correo" required="">
                             </div>
-                              <div class="form-group password">
+                              <div class="form-groupx password">
                               <label class="sr-only" for="password">Elige contraseña</label>
-                                <input id="signup-nombre" name="nombre" type="text" class="form-control login-name" maxlength="35" placeholder="Elige una contraseña" required="">
+                                <input id="signup-nombre" name="nombre" type="text" class="form-controlx login-name" maxlength="35" placeholder="Elige una contraseña" required="">
                             </div>
-                              <div class="form-group telefono">
-                                <label class="sr-only" for="telefono">Telefono de contacto</label>
-                                <input id="signup-nombre" name="nombre" type="text" class="form-control login-name" maxlength="35" placeholder="Telefono de contacto" required="">
+                              <div class="form-groupx telefono">
+                                <label class="sr-onlyx" for="telefono">Telefono de contacto</label>
+                                <input id="signup-nombre" name="nombre" type="text" class="form-controlx login-name" maxlength="35" placeholder="Telefono de contacto" required="">
                             </div>
-                             <div class="form-group finca">
+                             <div class="form-groupx finca">
                                 <label class="sr-only" for="finca">direccion de tu finca</label>
-                                <input id="signup-nombre" name="nombre" type="text" class="form-control login-name" maxlength="35" placeholder="Ingresa la direccion de tu finca" required="">
+                                <input id="signup-nombre" name="nombre" type="text" class="form-controlx login-name" maxlength="35" placeholder="Ingresa la direccion de tu finca" required="">
                               </div>
                           </div>
-                          <button type="submit" class="enviar">Comenzar Ahora</button>
+                          <div class="col s12"><a class="enviarx" href="datos-agricultor.html">Comenzar Ahora</a></div>
                           <p class="note">Registrándote, aceptas nuestros <a class="blue"  href="index.html">términos y condiciones de servicio.</a></p>
 
                         </div>
@@ -68,13 +74,8 @@
                     </section>
                     </div>
                 </section>
-              </div>
+                <!--menu--->
 
-          </div>
-        </div>
-      </nav>
-
-    </header>
 
     <section class="prices-container">
       <div class="prices-background flex-column-wrap">
@@ -268,8 +269,23 @@
         </div>
       </div>
     </footer>
-    <script src="./client/js/jquery-3.1.1.min.js"></script>
-    <script src="./client/js/materialize.min.js"> </script>
-    <script src="./client/js/prices.js"></script>
+    <script>function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+  <script>
+    function openNav() {
+      document.getElementById("openmodal").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("openmodal").style.width = "0";
+    }
+    </script>
+
   </body>
 </html>

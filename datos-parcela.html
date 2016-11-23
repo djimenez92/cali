@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Cali | Añadir parcela</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./client/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/prices.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/main.css">
+    <link rel="stylesheet" href="fonts/style.css">
+  </head>
+  <body>
+     <!--menu-->
+
+            <ul  class="topnav" id="myTopnav">
+              <li class="left"><h1 style="margin-right=700px;">Cali</h1></li>
+              <li clas="step-image"><a href="/"><img with="20" src="./client/img/gb.png" alt="" /></a></li>
+              <li clas="step-image"><a href="/"><img with="20" src="./client/img/es.png" alt="" /></a></li>
+              <li><a  href="index.html">HOME</a></li>
+              <li><a href="prices.html">Productos</a></li>
+              <li><a href="features.html">Funcionalidades</a></li>
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+            </ul>
+      <!--menu-->
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Mi cuenta</a>
+        <a href="#">Parcelas</a>
+        <a href="#">Salir</a>
+      </div>
+      <div class="content-box">
+        <div class="contenido">
+          <div class="modal-header">
+          </div>
+
+          <div class="menu-opcional">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Joaquin Gonzalez</span>
+
+          </div>
+            <h3>  <a href="#">Parcelas > </a> Nombre > Añadir parcela</h3>
+            <p class="message-empty"> Ubica tu parcela para identificarla mejor. Puedes buscarla en el mapa o introducir sus códigos sigpac a la izquierda.<h</p>
+        </div>
+
+          <!-- nuevo menu-->
+
+
+      <div class="form-container">
+                <div class="left">
+                    <div class="pacerl-form">
+                      <div class="form-item fullsize parent-elem">
+                            <h1>Datos basicos:</h1>
+                            <input type="text" placeholder="Nombre Parcela" maxlength="30">
+                        </div>
+                        <div class="form-item fullsize">
+                            <select> <option value=Provincia > Provincia </select>
+                        </div>
+                        <div class="form-item fullsize">
+                          <select> <option value=municipio> Municipio </select>
+                        </div>
+                        <div class="form-item fullsize parent-elem">
+                          <h1>Superficie SIGPAC (ha):</h1>
+                          <input type="text" placeholder="Superfice total (en ha)" >
+                        </div>
+                        <div class="form-item fullsize parent-elem">
+                          <h1>Codigo SIGPAC (opcional)</h1>
+                          <input type="text" placeholder="Agregado" >
+                          </div>
+                        <div class="form-item fullsize parent-elem">
+                          <input type="text" placeholder="Zona" >
+                        </div>
+                        <div class="form-item fullsize parent-elem">
+                          <input type="text" placeholder="Poligono" >
+                        </div>
+                        <div class="form-item fullsize parent-elem">
+                          <input type="text" placeholder="Parcela" >
+                        </div>
+                        <div class="form-item fullsize parent-elem">
+                          <input type="text" placeholder="Recinto" >
+                        </div>
+                         <div >
+                           <a class="boton1 left comenzar"href="#">Buscar</a>
+                           <a class="comenzar"href="pasaporte-biologico.html">Continuar</a>
+                         </div>
+                       </div>
+                         </div>
+                           <div class="clearfix-20"></div>
+                         <div class="">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3170279.14070452!2d-5.685045838697847!3d40.179127704712045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2zRXNwYcOxYQ!5e1!3m2!1ses!2sve!4v1479829034120" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </div>
+                      </div>
+                    </div>
+          <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+             }
+          </script>
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+  </body>
+  </html>
