@@ -73,8 +73,103 @@ body{
 .contenedor{
   margin-left: auto;
   margin-right: auto;
+  /* overflow-y: scroll; */
+}
+.mapa {
+    float: right;
+    padding-top: 5px;
+    /* box-sizing: border-box; */
+    padding-bottom: 15px;
+    height: 0;
+}
+.contenedor>.left{
+  overflow: scroll;
+  width: 530px;
+  background-color: #e4e4e4;
+  height: 700px;
+}
+.barra-buscador{
+ width: 523px;
+ position: relative;
+ margin-top: 3px;
+ font-size: 14px;
+ line-height: 1.42857143;
+ color: #555;
+ /* overflow-y: scroll; */
+ background-color: #ececec;
+ background-image: none;
+ -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.barra{
+   position: relative;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #ececec;
+  background-image: none;
+}
+.barra-buscador>input[type="text"]{
+  width: 500px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(236, 236, 236);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  /* -webkit-transition: width 0.4s ease-in-out; */
+  /* transition: width 0.4s ease-in-out; */
+}
+.columna{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cuadro-perfil{border-color: #EBEBEB;padding: 10px;width: 240px;}
+.portada{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140px;
+  background-image:url("../img/t1.jpg");
+
+}
+.portada1{background-image:url("../img/t5.jpg");}
+.portada2{background-image:url("../img/t2.jpg");}
+.portada3{background-image:url("../img/t3.jpg");}
+.portada4{background-image:url("../img/t4.jpg");}
+.portada5{background-image:url("../img/t6.jpg");}
+
+.cuadro-perfil.foto-perfil{width: 60px;height: 60px;border-radius: 60px;border: 2px solid #f9f9f9;position: absolute;left:160px;bottom: -25px;z-index: 2;}
+.foto-perfil2{width: 70px;height: 70px;border-radius: 60px;border: 2px solid #f9f9f9;position: absolute;left: 5px;bottom: 25px;z-index: 2;}
+.foto-perfil{width: 70px;height: 70px;border-radius: 60px;border: 2px solid #f9f9f9;position: relative;left: 10px;top: 100px;z-index: 2;}
+.datos{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120px;
+  background-color: #d8d8d8;
+  padding-top: 15px;
+  padding-right: 15px;
+  color: black;
+  text-align: right;
+}
+.datos button{
+  width: 80px;
+  font-size: small;
+  background-color: #ececec;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  float: left;
+  border: 4px;
+  right: -5px;
 }
 
+.icnono{
+position: absolute;
+padding: 10px 12px;
+pointer-events: none;
+}
 /*parcela contenedor*/
 .form-container {
     padding: 20px;
@@ -136,12 +231,12 @@ body{
 input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="email"], textarea ,input[type="checkbox"]{
     width: 100%;
     padding: 10px 15px;
-    letter-spacing: .2px;
+    /* letter-spacing: .2px; */
     font-size: 16px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 3px 3px 3px 3px;
-    height: 50px;
+    border: 0;
+    height: 40px;
+    background-color: #ececec;
 }
 .select2-container {
     margin: 0;
