@@ -603,9 +603,16 @@ header nav{
 
   }
 .cover-page-principal-container .cover-page-principal-background{
-  display:flex;flex-flow:column wrap;
-  justify-content:center;align-items:center;width:100%;height:500px;
-  background:linear-gradient(to right bottom,rgba(252,103,101,0.85) 0%,rgba(248,139,21,0.85) 100%);position:absolute;left:0;top:0;
+  display: block;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:500px;
+  background:linear-gradient(to right bottom,rgba(252,103,101,0.85) 0%,rgba(248,139,21,0.85) 100%);
+  position:absolute;
+  left:0;
+  top:0;
   }
   .cover-page-principal-container .cover-page-principal-background .container .cover-page-principal-content .row .col{display:flex;flex-flow:row nowrap;justify-content:center;}.cover-page-principal-container .cover-page-principal-background .container .cover-page-principal-content .row .col p{color:#fff;text-align:center}.cover-page-principal-container .cover-page-principal-background .container .cover-page-principal-content .row:nth-of-type(1) .col p{width:90%;font-size:1.9rem;
     font-family:'Raleway-Medium';font-weight:bolder}.cover-page-principal-container .cover-page-principal-background .container .cover-page-principal-content .row:nth-of-type(2){margin-bottom:50px;}.cover-page-principal-container .cover-page-principal-background .container .cover-page-principal-content .row:nth-of-type(2) .col p{font-size:1.3rem;}
@@ -613,12 +620,66 @@ header nav{
   .cover-page-principal-container .cover-page-principal-background .container .cover-page-principal-content .row:nth-of-type(3){margin-bottom:0}
   .cover-page-principal-container span{color:#fff;font-size:4rem;font-weight:bolder;
     position:absolute;left:50%;bottom:0;-webkit-transform:translateX(-50%);transform:translateX(-50%);cursor:pointer}
-    .in-the-media{width:100%;height:auto;background-color:#fff;padding:80px 0;position:relative;left:0;top:0;}
-    .in-the-media .container .row:nth-of-type(1) .col p{color:#6b7c93;font-size:1.6rem;font-family:'Raleway-Regular';font-weight:bolder;
+    .in-the-media{
+      width: 100%;
+      height: auto;
+      background-color:#fff;
+      padding: 80px 0;
+      left:0;
+      top: 0;
+    }
+    .in-the-media .container .row:nth-of-type(1) .col p {
+      color:#6b7c93;
+      font-size:1.6rem;
+      font-family:'Raleway-Regular';font-weight:bolder;
     text-align:center;position:relative;
-    }.in-the-media .container .row:nth-of-type(1) .col p:before{content:'';width:30px;height:3px;background-color:#fdd13e;position:absolute;left:0;bottom:-5px}
-    .in-the-media .container .row:nth-of-type(2){margin-top:40px;margin-bottom:0}.offers-container{width:100%;height:auto;background-color:#eef6ff;padding:80px 0;
-      position:relative;left:0;top:0;}.offers-container .container .row .col p{font-size:1.3rem;color:#6b7c93}.offers-container .container .row .col .country{margin-bottom:20px}.offers-container .container .row .col .offer-information{margin-top:10px;}.offers-container .container .row .col .offer-information p{text-align:center}
+    }.in-the-media .container .row:nth-of-type(1) .col p:before{
+      content:'';width:30px;
+      height:3px;
+      background-color:#fdd13e;
+      position:absolute;left:0;
+      bottom:-5px}
+    .in-the-media .container .row:nth-of-type(2){
+      margin-top:40px;
+      margin-bottom:0;
+    }
+.pizarra-precios{
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+  position: absolute;
+  display: -webkit-inline-box;
+  left: 0;
+  top: 0;
+  background-color: #f2f2f2;
+}
+.precios_portada {
+    width: 31%;
+    float: left;
+    padding: 0 1%;
+    padding-left: 100px;
+}
+  .ver_precios {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    text-align: center;
+}
+.pizarra{
+    width: 100%;
+    /* float: left; */
+    margin-top: 5px;
+}
+      .offers-container{
+        width:100%;height:auto;
+        background-color:#eef6ff;
+        padding:80px 0;
+      position:relative;
+      left:0;top:0;}
+    .offers-container .container .row .col p{font-size:1.3rem;color:#6b7c93}
+    .offers-container .container .row .col .country{margin-bottom:20px}
+    .offers-container .container .row .col .offer-information{margin-top:10px;}
+    .offers-container .container .row .col .offer-information p{text-align:center}
       .offers-container .container .row .col a{font-family:'Raleway-Medium';border:2px solid #fca241;color:#fca241;margin-top:20px}.offers-container .container .row .col a:hover{background-color:#fca241;color:#fff}.offers-container .container .row:nth-of-type(1){margin-bottom:60px;}
       .offers-container .container .row:nth-of-type(1) .col p{color:#6b7c93;font-size:1.6rem;font-family:'Raleway-Regular';font-weight:bolder;text-align:center;position:relative;}.offers-container .container .row:nth-of-type(1) .col p:before{content:'';width:30px;height:3px;background-color:#fdd13e;position:absolute;left:0;bottom:-5px}
   .offers-container .container .row:nth-of-type(2){margin-bottom:0;}
@@ -663,10 +724,36 @@ header nav{
         position:absolute;top:-25px;
         left:50%;
         -webkit-transform:translateX(-50%);
-        transform:translateX(-50%)}
+        transform:translateX(-50%);}
+  .precios{
+        width: 100%;
+        height: auto;
+        background-color: #f5f7f9;
+        padding: 80px 0;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 25;
+        overflow: hidden;
+  }
+  .contenedor>h3{
+    text-align: center;
+    color: #4caf50;
+    padding-bottom: 50px;
+    font-size: xx-large;
+  }
+  .precios_portada>p{
+    font-size: large;
+    color: black;
+    font-weight:bold;
+    text-align: center;
+    padding-bottom:20px;
+  }
   .photos{width:100%;
       height:auto;background-color:#eef6ff;
       padding:80px 0;position:relative;left:0;top:0;}
+
+
   .photos .container .row:nth-of-type(1){margin-bottom:60px;}.photos .container .row:nth-of-type(1) .col p{color:#2d65b1;font-size:1.6rem;font-family:'Raleway-Regular';font-weight:bolder;text-align:center;position:relative;}.photos .container .row:nth-of-type(1) .col p:before{content:'';width:30px;height:3px;background-color: #f47e36;position:absolute;left:0;bottom:-5px;}.photos .container .row:nth-of-type(5){margin-bottom:0}.shipping-arrangements{width:100%;height:auto;background-color:#fff;padding:80px 0;position:relative;left:0;top:0;}
   .shipping-arrangements .container .row:nth-of-type(1) .col p{color: #2d65b1;font-size:1.6rem;font-family:'Raleway-Regular';font-weight:bolder;text-align:center;position:relative;}.shipping-arrangements .container .row:nth-of-type(1) .col p:before{content:'';width:30px;height:3px;background-color: #fd943e;position:absolute;left:0;bottom:-5px;}
   .shipping-arrangements .container .row:nth-of-type(2) .col .modality{margin-top:50px;}
